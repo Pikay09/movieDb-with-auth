@@ -1,0 +1,24 @@
+<div>
+    <h3>Movies List</h3>
+    <div class="row">
+        <% movies.forEach(movie => {%>
+        <div class="col-3">
+            <div class="card">
+                <img src="<%= movie.posterUrl %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><%= movie.title %></h5>
+                    <div>Director Name: <%= movie.directorName  %></div>
+                    <div>Actors: <%= movie.actors.join(", ")  %></div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <% })%>
+    </div>
+</div>
+
+
+
+
+
+
